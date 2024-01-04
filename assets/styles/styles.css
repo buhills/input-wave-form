@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #00000066;
   padding: 20px 40px;
   border-radius: 5px;
 }
@@ -67,7 +67,7 @@ body {
   width: 100%;
   padding: 15px 0;
   font-size: 18px;
-  color: #fff; 
+  color: #fff;
 }
 
 .form-control input:focus,
