@@ -9,6 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  overflow: hidden;
   justify-content: center;
   margin: 0;
 }
@@ -26,16 +28,16 @@ body {
 
 .container a {
   text-decoration: none;
-  color: lightblue;
+  color: #add8e6;
 }
 
 .btn {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background-color: lightblue;
+  background-color: #add8e6;
   padding: 15px;
-  font-family: sans-serif;
+  font-family: inherit;
   font-size: 16px;
   border: 0;
   border-radius: 5px;
@@ -73,4 +75,24 @@ body {
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
+  border-bottom-color: #add8e6;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: #add8e6;
+  transform: translateY(-30px);
 }
